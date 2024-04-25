@@ -10,7 +10,7 @@ const portfolios = [
   {
     id: "01",
     imgUrl: portfolioImg01,
-    category: "Web Design",
+    category: "Full Stack",
     title: "Finance Technology Website",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
@@ -20,7 +20,7 @@ const portfolios = [
   {
     id: "02",
     imgUrl: portfolioImg04,
-    category: "Ux",
+    category: "Full stack",
     title: "Video Conference Website",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
@@ -30,7 +30,7 @@ const portfolios = [
   {
     id: "03",
     imgUrl: portfolioImg02,
-    category: "Ux",
+    category: "Full Stack",
     title: "Multimedia Sharing Website",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
@@ -40,7 +40,7 @@ const portfolios = [
   {
     id: "04",
     imgUrl: portfolioImg05,
-    category: "Web Design",
+    category: "Frontend",
     title: "Landing Page",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
@@ -50,7 +50,7 @@ const portfolios = [
   {
     id: "05",
     imgUrl: portfolioImg03,
-    category: "Web Design",
+    category: "Frontend",
     title: "Landing Page",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
@@ -61,7 +61,7 @@ const portfolios = [
   {
     id: "06",
     imgUrl: portfolioImg06,
-    category: "Ux",
+    category: "Full Stack",
     title: "Online Therapy Website",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
@@ -71,7 +71,7 @@ const portfolios = [
   {
     id: "07",
     imgUrl: portfolioImg07,
-    category: "Web Design",
+    category: "Full Stack",
     title: "Appointment Booking Website",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
@@ -81,7 +81,7 @@ const portfolios = [
   {
     id: "08",
     imgUrl: portfolioImg01,
-    category: "Web Design",
+    category: "Backend",
     title: "Finance Technology Website",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
@@ -91,7 +91,7 @@ const portfolios = [
   {
     id: "09",
     imgUrl: portfolioImg02,
-    category: "Ux",
+    category: "Backend",
     title: "Video Conference Website",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
@@ -101,7 +101,7 @@ const portfolios = [
   {
     id: "10",
     imgUrl: portfolioImg03,
-    category: "Ux",
+    category: "Backend",
     title: "File Sharing Website",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
@@ -111,7 +111,7 @@ const portfolios = [
   {
     id: "11",
     imgUrl: portfolioImg04,
-    category: "Web Design",
+    category: "Frontend",
     title: "Landing Page",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
@@ -121,7 +121,7 @@ const portfolios = [
   {
     id: "12",
     imgUrl: portfolioImg05,
-    category: "Web Design",
+    category: "Frontend",
     title: "Landing Page",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
@@ -131,7 +131,7 @@ const portfolios = [
   {
     id: "13",
     imgUrl: portfolioImg06,
-    category: "Web Design",
+    category: "Full Stack",
     title: "Online Therapy Website",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
@@ -141,7 +141,7 @@ const portfolios = [
   {
     id: "14",
     imgUrl: portfolioImg07,
-    category: "ux",
+    category: "Full Stack",
     title: "Appointment Booking Website",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",

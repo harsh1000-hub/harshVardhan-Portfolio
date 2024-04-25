@@ -1,6 +1,42 @@
+import { useState, useEffect } from "react";
 import React from "react";
 import data from "../../assets/data/portfolioData";
+import Modal from "./Modal";
 const Portfolio = () => {
+  const [nextItems, setNextItems] = useState(6);
+  const [portfolios, setPortfolios] = useState(data);
+  const [selectTab, setSelectTab] = useState("all");
+  const [showModal, setShowModal] = useState(false);
+  const [activeId, setActiveId] = useState(null);
+  // loadMoreHandler function
+  const loadMoreHandler = () => {
+    setNextItems((prev) => prev + 3);
+  };
+
+  //showModalHandler function
+  const showModalHandler = (id) => {
+    setShowModal(true);
+    setActiveId(id);
+  };
+  useEffect(() => {
+    if (selectTab === "all") {
+      setPortfolios(data);
+    }
+    if (selectTab === "full stack") {
+      const filteredData = data.filter(
+        (item) => item.category === "Full Stack"
+      );
+      setPortfolios(filteredData);
+    }
+    if (selectTab === "frontend") {
+      const filteredData = data.filter((item) => item.category === "Frontend");
+      setPortfolios(filteredData);
+    }
+    if (selectTab === "backend") {
+      const filteredData = data.filter((item) => item.category === "Backend");
+      setPortfolios(filteredData);
+    }
+  }, [selectTab]);
   return (
     <section id="portfolio">
       <div className="container">
@@ -11,21 +47,37 @@ const Portfolio = () => {
             </h3>
           </div>
           <div className="flex gap-3">
-            <button className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[8px]">
+            <button
+              onClick={() => setSelectTab("all")}
+              className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
+            >
               All
             </button>
-            <button className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[8px]">
+            <button
+              onClick={() => setSelectTab("full stack")}
+              className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
+            >
+              Full Stack
+            </button>
+            <button
+              onClick={() => setSelectTab("frontend")}
+              className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
+            >
               Frontend
             </button>
-            <button className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[8px]">
+            <button
+              onClick={() => setSelectTab("backend")}
+              className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
+            >
               Backend
             </button>
           </div>
         </div>
 
         <div className="flex items-center gap-4 flex-wrap mt-12">
-          {data?.map((portfolio, index) => (
+          {portfolios?.slice(0, nextItems)?.map((portfolio, index) => (
             <div
+              key={index}
               data-aos="fade-zoom-in"
               data-aos-dalay="50"
               data-aos-duration="1000"
@@ -40,7 +92,10 @@ const Portfolio = () => {
               </figure>
               <div className="w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block">
                 <div className="w-full h-full flex items-center justify-center">
-                  <button className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200">
+                  <button
+                    onClick={() => showModalHandler(portfolio.id)}
+                    className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200"
+                  >
                     See details
                   </button>
                 </div>
@@ -48,7 +103,18 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
+        <div className="text-center mt-6">
+          {nextItems < portfolios.length && data.length > 6 && (
+            <button
+              onClick={loadMoreHandler}
+              className="text-white bg-primaryColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200"
+            >
+              Load more
+            </button>
+          )}
+        </div>
       </div>
+      {showModal && <Modal setShowModal={setShowModal} activeId={activeId} />}
     </section>
   );
 };
