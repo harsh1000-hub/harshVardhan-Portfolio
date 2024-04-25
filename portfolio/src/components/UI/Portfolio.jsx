@@ -49,25 +49,25 @@ const Portfolio = () => {
           <div className="flex gap-3">
             <button
               onClick={() => setSelectTab("all")}
-              className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
+              className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[10px] hover:bg-smallTextColor hover:text-white "
             >
               All
             </button>
             <button
               onClick={() => setSelectTab("full stack")}
-              className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
+              className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[10px]  hover:bg-smallTextColor hover:text-white"
             >
               Full Stack
             </button>
             <button
               onClick={() => setSelectTab("frontend")}
-              className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
+              className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[10px]  hover:bg-smallTextColor hover:text-white"
             >
               Frontend
             </button>
             <button
               onClick={() => setSelectTab("backend")}
-              className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
+              className="text-smallTextColor  border border-solid border-smallTextColor py-2 px-4 rounded-[10px]  hover:bg-smallTextColor hover:text-white"
             >
               Backend
             </button>

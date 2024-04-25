@@ -38,28 +38,29 @@ const Hero = () => {
                 href="portfolio"
                 className="text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor"
               >
-                See portfolio
+                See projects
               </a>
             </div>
             <p
               data-aos="fade-left"
               data-aos-duration="1500"
-              className="gap-2 text-headingColor mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10 "
+              className="gap-2 text-headingColor mt-12 font-[500] text-sm leading-7 sm:pl-14 sm:pr-10 bg-white rounded-lg p-4 shadow-md"
             >
-              <span>
-                <i class="ri-apps-2-line"></i>
-              </span>
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000 years old.
+              Hey, I'm Harsh Vardhan! Experienced software developer
+              specializing in full-stack development, Agile methodologies, and
+              security practices. Committed to customer-centric solutions and
+              continuous innovation.
             </p>
+
             <div className="flex items-center gap-9 mt-14 ">
               <span className="text-smallTextColor text-[15px] font-[600]">
                 Follow me:
               </span>
               <span>
                 <a
-                  href="#linkedin"
+                  href="https://www.linkedin.com/in/harshv07/"
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-smallTextColor text-[18px] font-[600]"
                 >
                   <i class="ri-linkedin-box-line"></i>
@@ -67,7 +68,7 @@ const Hero = () => {
               </span>
               <span>
                 <a
-                  href="#github"
+                  href="https://github.com/harsh1000-hub"
                   className="text-smallTextColor text-[18px] font-[600]"
                 >
                   <i class="ri-github-fill"></i>
@@ -75,7 +76,7 @@ const Hero = () => {
               </span>
               <span>
                 <a
-                  href="#twitter"
+                  href="https://twitter.com/HarshVardh94430"
                   className="text-smallTextColor text-[18px] font-[600]"
                 >
                   <i class="ri-twitter-x-fill"></i>
@@ -83,7 +84,7 @@ const Hero = () => {
               </span>
               <span>
                 <a
-                  href="#instagram"
+                  href="https://www.instagram.com/the_hvd/?next=%2F"
                   className="text-smallTextColor text-[18px] font-[600]"
                 >
                   <i class="ri-instagram-line"></i>
