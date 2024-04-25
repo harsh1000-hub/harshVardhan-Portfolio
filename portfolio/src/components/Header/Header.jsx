@@ -39,7 +39,7 @@ const Header = () => {
       ref={headerRef}
       className="w-full h-[80px] leading-[80px] flex items-center"
     >
-      <div className="container">
+      <div className="container  border-b pb-3  border-gray-200 shadow-xl ">
         <div className="flex items-center justify-between">
           {/* logo */}
           <div className="flex items-center gap-[10px]">
@@ -62,7 +62,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className="text-smallTextColor font-[600]"
+                  className="text-smallTextColor font-[600]  "
                   href="#about"
                 >
                   About

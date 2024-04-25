@@ -11,9 +11,9 @@ const Hero = () => {
             <h5
               data-aos="fade-right"
               data-aos-duration="1500"
-              className="text-headingColor font-[600] text-[16px] "
+              className="text-headingColor font-[600] text-[25px] "
             >
-              Hello welcome
+              Hello welcome 👋
             </h5>
             <h1
               data-aos="fade-up"
@@ -35,7 +35,7 @@ const Hero = () => {
                 </button>
               </a>
               <a
-                href="portfolio"
+                href="#portfolio"
                 className="text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor"
               >
                 See projects
